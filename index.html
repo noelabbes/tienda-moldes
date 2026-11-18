@@ -396,7 +396,7 @@ $("#orderForm").onsubmit = e => {
   msg += `Entrega: ${recojo ? "Recojo en el taller (Ventanilla)" : "Envío por Shalom"}\n`;
   if(!recojo && f.get("destino").trim()) msg += `Destino: ${f.get("destino").trim()}\n`;
   if(f.get("nota").trim()) msg += `Comentario: ${f.get("nota").trim()}\n`;
-  window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`, "_blank");
+  location.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
 };
 
 render();
