@@ -405,7 +405,9 @@ $("#orderForm").onsubmit = e => {
   const total = lines.reduce((a,p)=>a+cart[p.id]*p.price,0);
   const ent = f.get("entrega");
   const ENT = {shalom:"Envío gratis por Shalom", contra:"Contra entrega (Panamericana Norte)", recojo:"Recojo en el taller (Ventanilla)"};
-  let msg = `Hola, quiero hacer este pedido:\n\n`;
+  const ABC = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  const code = "PF-" + Array.from({length:4}, () => ABC[Math.floor(Math.random()*ABC.length)]).join("");
+  let msg = `Hola, quiero este pedido *${code}*\n\n`;
   lines.forEach(p => { msg += `• ${cart[p.id]} x ${p.name} (${soles(p.price)} c/u) = ${soles(cart[p.id]*p.price)}\n`; });
   msg += `\n*Total: ${soles(total)}*\n\n`;
   msg += `Nombre: ${f.get("nombre").trim()}\n`;
@@ -413,6 +415,7 @@ $("#orderForm").onsubmit = e => {
   if(ent!=="recojo" && f.get("destino").trim()) msg += `${ent==="contra" ? "Punto de entrega" : "Destino"}: ${f.get("destino").trim()}\n`;
   if(f.get("nota").trim()) msg += `Comentario: ${f.get("nota").trim()}\n`;
   msg += `Pago: Yape/Plin, 50% de adelanto (${soles(Math.ceil(total/2))})\n`;
+  msg += `\nTienda: https://tienda-moldes.vercel.app`;
   location.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
 };
 
