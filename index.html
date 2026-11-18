@@ -7,7 +7,7 @@
 <meta name="description" content="Moldes metálicos de 3 huecos para bloquetas de 12 y 13 cm. Fabricados en Ventanilla, Lima. Envío gratis a todo el Perú por Shalom. Pago con Yape o Plin. Arma tu pedido y envíalo por WhatsApp.">
 <meta name="theme-color" content="#121314">
 <meta property="og:title" content="Pfuño Industrias · Moldes para bloquetas">
-<meta property="og:description" content="Fabrica tus propios bloques y ahorra frente al King Kong. Garantía de 1 año, envío gratis por Shalom.">
+<meta property="og:description" content="Moldes para bloques de tabiquería y cercos. Ahorra frente al ladrillo pandereta. Garantía de 1 año, envío gratis por Shalom.">
 <meta property="og:image" content="https://tienda-moldes.vercel.app/img/og.jpg">
 <meta property="og:url" content="https://tienda-moldes.vercel.app/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,6 +76,10 @@ h2{font-size:clamp(26px,4.5vw,36px);font-weight:800;letter-spacing:-.01em;margin
 .size small{color:var(--muted)}
 .size .p{display:block;margin-top:6px;font-weight:800;color:var(--yellow);font-size:18px}
 .size.on{border-color:var(--yellow);background:rgba(245,183,0,.07)}
+.size .u{display:block;font-size:12px;color:var(--concrete);margin-top:6px;line-height:1.35}
+.size.soon{grid-column:1/-1;opacity:.85;cursor:default;border-style:dashed}
+.size.soon .badge{display:inline-block;background:var(--yellow);color:var(--yellow-ink);font-size:11px;font-weight:800;padding:2px 8px;border-radius:99px;margin-left:8px;vertical-align:middle}
+.size.soon a{display:inline-block;margin-top:10px;color:var(--green);font-weight:700;font-size:14px}
 .qty-row{display:flex;gap:10px;align-items:stretch}
 .qty{display:flex;align-items:center;border:1.5px solid var(--line);border-radius:12px}
 .qty button{width:44px;height:100%;font-size:22px}
@@ -191,8 +195,8 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--yellow)}
     <div class="wrap">
       <div>
         <span class="tag narrow">Fabricado en Ventanilla · Lima</span>
-        <h1>Levanta tu muro gastando <em>la tercera parte</em> en materiales</h1>
-        <p class="lead">Fabrica tus propios bloques de 12 o 13 cm con nuestro molde de 3 huecos. Con una bolsa de cemento haces unos 40 bloques, y el molde se paga solo en tus primeros metros de muro.</p>
+        <h1>Levanta tus tabiques y cercos gastando <em>la tercera parte</em> en materiales</h1>
+        <p class="lead">Fabrica tus propios bloques de 12 o 13 cm para muros no portantes con nuestro molde de 3 huecos. Con una bolsa de cemento haces unos 40 bloques, y el molde se paga solo en tus primeros metros de muro.</p>
         <div class="cta-row">
           <a class="cta" href="#calculadora">Calcula tu ahorro</a>
           <a class="cta ghost" href="#molde">Ver el molde</a>
@@ -218,7 +222,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--yellow)}
           <div class="thumbs" id="thumbs"></div>
         </div>
         <div class="pinfo">
-          <span class="tag narrow">3 huecos · fondo pasante</span>
+          <span class="tag narrow">3 huecos · fondo pasante · muros no portantes</span>
           <h3>Molde bloquetera de 3 huecos</h3>
           <p class="desc">Plancha de acero de 1.5 mm reforzada con platina, machos fijos y manijas largas para desmoldar de pie. Pesa 9.3 kg: lo mueves todo el día sin cansarte, a diferencia de los moldes de plancha gruesa de 2.5 a 3 mm.</p>
 
@@ -235,6 +239,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--yellow)}
 
           <dl class="specs">
             <div><dt>Bloque que produce</dt><dd>12 × 20 × 40 cm o 13 × 20 × 40 cm</dd></div>
+            <div><dt>Uso</dt><dd>Muros no portantes: tabiquería, divisiones y cercos</dd></div>
             <div><dt>Huecos</dt><dd>3, fondo pasante</dd></div>
             <div><dt>Pared del bloque</dt><dd>2.9 cm</dd></div>
             <div><dt>Cemento por bloque</dt><dd>≈ 1 kg (mezcla 1:6)</dd></div>
@@ -265,20 +270,20 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--yellow)}
   <section id="calculadora">
     <div class="wrap">
       <h2>¿Cuánto ahorras con tus propios bloques?</h2>
-      <p class="sub">Pon las medidas de tu muro y compara con ladrillo King Kong.</p>
+      <p class="sub">Pon las medidas de tu tabique o cerco y compara con ladrillo pandereta, que es el que se usa para muros no portantes.</p>
       <div class="calc">
         <div>
           <div class="in">
             <label>Largo del muro (m)<input id="cL" type="number" inputmode="decimal" min="0" step="0.1" value="10"></label>
             <label>Alto del muro (m)<input id="cH" type="number" inputmode="decimal" min="0" step="0.1" value="2.4"></label>
           </div>
-          <p class="fine" style="margin-top:14px">Solo materiales del muro, sin mortero de asentado (con bloques usas menos, porque hay menos juntas). Precios referenciales en Lima, nov. 2026: bolsa de cemento S/ 29, arena gruesa S/ 60 el m³, King Kong S/ 1.00 la unidad.</p>
+          <p class="fine" style="margin-top:14px">Solo materiales del muro, sin mortero de asentado (con bloques usas menos, porque hay menos juntas). Precios referenciales en Lima, nov. 2026: bolsa de cemento S/ 29, arena gruesa S/ 60 el m³, pandereta S/ 0.90 la unidad.</p>
         </div>
         <div class="res">
           <div><small>Bloques que necesitas</small><strong id="rB">–</strong></div>
           <div><small>Bolsas de cemento</small><strong id="rS">–</strong></div>
           <div><small>Con tus bloques</small><strong id="rC">–</strong></div>
-          <div><small>Con King Kong</small><strong id="rK">–</strong></div>
+          <div><small>Con pandereta</small><strong id="rK">–</strong></div>
           <div class="hl"><small>Te ahorras</small><strong id="rA">–</strong><small id="rP"></small></div>
         </div>
       </div>
@@ -343,7 +348,8 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--yellow)}
   <section>
     <div class="wrap">
       <h2>Preguntas frecuentes</h2>
-      <details><summary>¿Cuál medida me conviene, 12 o 13 cm?</summary><p>Las dos producen bloquetas de 20 × 40 cm. La diferencia es el ancho del muro: la de 13 cm da una bloqueta un poco más robusta. Si tienes dudas, escríbenos qué vas a construir y te orientamos.</p></details>
+      <details><summary>¿Cuál medida me conviene, 12 o 13 cm?</summary><p>Las dos son para muros no portantes. El de 12 cm es para tabiquería y divisiones interiores. El de 13 cm también sirve para tabiquería, pero es más robusto y está pensado para cercos perimetrales. Si tienes dudas, escríbenos qué vas a construir y te orientamos.</p></details>
+      <details><summary>¿Sirven para muros portantes?</summary><p>No. Los bloques de 12 y 13 cm son para muros que no cargan peso de la estructura: tabiques, divisiones y cercos. Para muros portantes estamos por lanzar el molde de 15 × 20 × 40 cm de 2 huecos. Puedes pedir que te avisemos cuando salga.</p></details>
       <details><summary>¿Envían a provincia? ¿Cuánto cuesta el envío?</summary><p>El envío por Shalom es gratis a todo el Perú. Recoges el molde en la agencia de tu ciudad con tu DNI.</p></details>
       <details><summary>¿En cuánto tiempo llega?</summary><p>Fabricamos cada molde a pedido: 4 días en el taller y al quinto día lo entregamos en Shalom o en la contra entrega. Desde la agencia, Shalom tarda lo normal hasta tu ciudad.</p></details>
       <details><summary>¿Qué cubre la garantía?</summary><p>Un año contra desoldaduras, dobleces o fallas del molde por uso normal. Lo reparamos o lo cambiamos.</p></details>
@@ -396,8 +402,8 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--yellow)}
 <script>
 const WHATSAPP = "51937631135";
 const PRODUCTS = [
-  {id:"m12", name:"Molde bloquetera 12 cm", size:"12 cm", dims:"12 × 20 × 40", price:260},
-  {id:"m13", name:"Molde bloquetera 13 cm", size:"13 cm", dims:"13 × 20 × 40", price:270}
+  {id:"m12", name:"Molde bloquetera 12 cm", size:"12 cm", dims:"12 × 20 × 40", price:260, uso:"Tabiquería y divisiones interiores"},
+  {id:"m13", name:"Molde bloquetera 13 cm", size:"13 cm", dims:"13 × 20 × 40", price:270, uso:"Tabiquería y cercos: más robusto"}
 ];
 const PHOTOS = [
   ["molde-negro-top","Molde visto desde arriba con su bloqueta"],
@@ -430,10 +436,14 @@ const sizes = $("#sizes");
 PRODUCTS.forEach(p => {
   const b = document.createElement("button");
   b.type = "button"; b.className = "size" + (p.id===sel ? " on" : "");
-  b.innerHTML = `<strong>${p.size}</strong><small>Bloqueta ${p.dims} cm</small><span class="p">${soles(p.price)}</span>`;
-  b.onclick = () => { sel = p.id; sizes.querySelectorAll(".size").forEach(x=>x.classList.remove("on")); b.classList.add("on"); };
+  b.innerHTML = `<strong>${p.size}</strong><small>Bloque ${p.dims} cm</small><span class="u">${p.uso}</span><span class="p">${soles(p.price)}</span>`;
+  b.onclick = () => { sel = p.id; sizes.querySelectorAll(".size:not(.soon)").forEach(x=>x.classList.remove("on")); b.classList.add("on"); };
   sizes.appendChild(b);
 });
+const soon = document.createElement("div");
+soon.className = "size soon";
+soon.innerHTML = `<strong>15 cm <span class="badge">PRÓXIMAMENTE</span></strong><small>Bloque 15 × 20 × 40 cm · 2 huecos</small><span class="u">Portante: para muros que cargan, alternativa al King Kong</span><span class="p">${soles(290)}</span><a href="https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Hola, quiero que me avisen cuando salga el molde de 15 cm (portante).")}" target="_blank" rel="noopener">Avísame cuando salga →</a>`;
+sizes.appendChild(soon);
 $("#qMinus").onclick = () => { q = Math.max(1, q-1); $("#qVal").value = q; };
 $("#qPlus").onclick = () => { q = Math.min(50, q+1); $("#qVal").value = q; };
 $("#addBtn").onclick = () => {
@@ -503,9 +513,9 @@ $("#orderForm").onsubmit = e => {
 render();
 
 // calculadora (precios referenciales nov 2026)
-const CEM_SACO = 29, CEM_KG = 42.5, ARENA_M3 = 60, KK = 1.00;
+const CEM_SACO = 29, CEM_KG = 42.5, ARENA_M3 = 60, KK = 0.90; // pandereta
 const BLQ_M2 = 1 / (0.415 * 0.215);   // bloque 40x20 + junta 1.5 cm
-const KK_M2 = 1 / (0.255 * 0.105);    // King Kong de soga 24x9 + junta 1.5 cm
+const KK_M2 = 1 / (0.245 * 0.105);    // pandereta de soga 23x9 + junta 1.5 cm
 const ARENA_BLQ = 0.006;              // m3 de arena gruesa por bloque (1:6)
 function calc(){
   const a = Math.max(0, parseFloat($("#cL").value)||0) * Math.max(0, parseFloat($("#cH").value)||0);
